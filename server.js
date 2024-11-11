@@ -41,6 +41,10 @@ app.get('/', async function(req, res) {
       } 
 });
 
+app.get('/demo', function(req, res) {
+  res.render('pages/demo');
+});
+
 // About page
 app.get('/about', function(req, res) {
     res.render('pages/about');
